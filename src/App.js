@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Home } from './home';
+import { About } from './about';
+import { Work } from './work';
+import { Contact } from './contact';
+import { NoMatch } from './nomatch';
+import { Layout } from './components/layout';
+import { Navigationbar } from './components/navbar'
+import { Footer } from './components/footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Navigationbar />
+        <Layout>
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/work" component={Work} />
+              <Route exact path="/contact" component={Contact} />
+              <Route component={NoMatch} />
+
+            </Switch>
+          </Router>
+        </Layout>
+        <Footer />
+      </React.Fragment>
+    );
+  }
 }
-
 export default App;
