@@ -5,9 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 const Styles = styled.div`
     .navbar{
-        background-color: white;
         padding-top: 30px;
-        margin
     }
     .navbar-brand, .navbar-nav .nav-link {
         color: black;

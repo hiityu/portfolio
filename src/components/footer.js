@@ -18,7 +18,7 @@ export const Footer = () => (
                         &#169; James Stefanik 2020
                     </Col>
                     <Col className="p-8 d-flex justify-content-end" md={3} sm={12}>
-                        github , linkedin
+                        <a href='https://github.com/hiityu'>github</a> ,   <a href='https://www.linkedin.com/in/james-stefanik-532382a4/'>linkedin</a>
                     </Col>
                 </Row>
             </Container>
