@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './home';
-import { About } from './about';
-import { Work } from './work';
-import { Contact } from './contact';
-import { NoMatch } from './nomatch';
-import { Layout } from './components/layout';
-import { Navigationbar } from './components/navbar'
-import { Footer } from './components/footer'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Home } from "./home";
+import { About } from "./about";
+import { Work } from "./work";
+import { Contact } from "./contact";
+import { NoMatch } from "./nomatch";
+import { Layout } from "./components/layout";
+import { Navigationbar } from "./components/navbar";
+import { Footer } from "./components/footer";
 
 class App extends Component {
   render() {
@@ -22,7 +22,6 @@ class App extends Component {
               <Route exact path="/work" component={Work} />
               <Route exact path="/contact" component={Contact} />
               <Route component={NoMatch} />
-
             </Switch>
           </Router>
         </Layout>
