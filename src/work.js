@@ -37,6 +37,7 @@ export const Work = () => (
         <Col>
           <a href="https://afreebird.org/">
             <p>AFreeBird</p>
+            <p>Site Refactor using Django,Bootstrap,Jquery,JS,HTML</p>
           </a>
         </Col>
         <Col>
