@@ -5,7 +5,7 @@ on:
     branches:
       - master
 jobs:
-  build: ...  
+  build:  
   deploy:
     runs-on: ubuntu-latest
     # When application is successfully tested and build has been generated
