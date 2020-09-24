@@ -128,6 +128,8 @@ export const About = () => (
                 <ProgressBar now={50} />
                 <p>MySQL</p>
                 <ProgressBar now={70} />
+                <p>Java</p>
+                <ProgressBar now={60} />
               </Col>
               <Col>
                 <p>NodeJS</p>
@@ -136,6 +138,8 @@ export const About = () => (
                 <ProgressBar now={70} />
                 <p>Git/Github</p>
                 <ProgressBar now={80} />
+                <p>Pyhton</p>
+                <ProgressBar now={85} />
               </Col>
             </Row>
 
