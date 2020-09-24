@@ -2,6 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -12,7 +13,18 @@ const GlobalStyle = createGlobalStyle`
 const Styles = styled.div`
   .row {
     margin-left: 0;
+    padding-bottom: 1%;
   }
+  .col {
+    text-align: center;
+    margin-left: 0;
+  }
+  a {
+    color: black;
+    :hover {
+      color: white;
+  }
+
 `;
 
 export const Work = () => (
@@ -29,40 +41,36 @@ export const Work = () => (
       <Row>
         <Col>
           <a href="https://github.com/hiityu">
-            {" "}
-            <p>Github</p>{" "}
+            <p>My Github</p>
           </a>
         </Col>
 
         <Col>
-          <a href="https://afreebird.org/">
-            <p>AFreeBird</p>
-            <p>Site Refactor using Django,Bootstrap,Jquery,JS,HTML</p>
-          </a>
+          <Link to="/afreebird">Afreebird</Link>
         </Col>
         <Col>
-          <a href="http://www.childrenstheatercompany.org/">
-            <p>Childrens Theatre Comapny</p>
-          </a>
+          <Link to="/ctc">Childrens Theater company</Link>
         </Col>
         <Col>
-          <a href="https://www.henryboxbrownthemusical.com/">
-            <p>Henry Box Brown</p>
-          </a>
+          <Link to="/henryboxbrown">Henry Box Brown</Link>
         </Col>
         <Col>
-          <a href="https://jacklenzmusic.com/">
-            <p> Jack Lenz Music</p>
-          </a>
+          <Link to="/jacklenz">Jack Lenz</Link>
         </Col>
       </Row>
       <Row>
         <h2>Digital - Marketing / Project Mangement</h2>
       </Row>
       <Row>
-        <Col>1800 Lawyers</Col>
-        <Col>Childrens Theatre Company</Col>
-        <Col>Still Danger</Col>
+        <Col>
+          <Link to="/1800lawyers"> 1800Lawyers</Link>
+        </Col>
+        <Col>
+          <Link to="/ctc"> Childrens Theater company</Link>
+        </Col>
+        <Col>
+          <Link to="/stilldanger"> Still Danger</Link>
+        </Col>
       </Row>
     </div>
   </Styles>

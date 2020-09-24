@@ -29,7 +29,7 @@ body {
 const Button = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 3px solid black;
+  border: 1px solid black;
   color: black;
   margin: 0.5em 1em;
   padding: 0.25em 1em;
